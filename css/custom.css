@@ -1,0 +1,94 @@
+/* -----------------------------
+   全局渐变背景
+------------------------------ */
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5); /* 渐变背景 */
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+/* -----------------------------
+   文章卡片圆角
+------------------------------ */
+.post-card, 
+.post-list-item, 
+aside .card {
+    border-radius: 15px; /* 圆角效果 */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* -----------------------------
+   iPhone 风格按钮
+------------------------------ */
+.btn, .button, aside .card button, aside .card a {
+    border-radius: 9999px; /* 圆形/胶囊按钮 */
+    padding: 6px 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .button:hover, aside .card button:hover, aside .card a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* -----------------------------
+   侧边栏卡片背景渐变
+------------------------------ */
+aside .card {
+    background: linear-gradient(145deg, #f0f4f8, #d9e2ec);
+}
+
+/* -----------------------------
+   社交头像调整
+------------------------------ */
+aside .card_author img {
+    border-radius: 50%; /* 圆形头像 */
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+aside .card_author img:hover {
+    transform: scale(1.05);
+}
+
+/* -----------------------------
+   GitHub 按钮美化
+------------------------------ */
+aside .card_author a {
+    display: inline-block;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 18px;
+    margin-top: 10px;
+}
+
+aside .card_author a:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* -----------------------------
+   标签 & 分类卡片美化
+------------------------------ */
+aside .card_tags a, aside .card_categories a {
+    background: linear-gradient(135deg, #FFD3B5, #FD6585);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin: 2px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+aside .card_tags a:hover, aside .card_categories a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
