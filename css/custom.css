@@ -92,9 +92,3 @@ aside .card_tags a:hover, aside .card_categories a:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-/* 强制导航栏 Logo 左对齐 */
-.navbar-brand {
-    float: left !important;
-    margin-left: 10px; /* 可调整间距 */
-}
